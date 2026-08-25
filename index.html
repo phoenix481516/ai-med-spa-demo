@@ -14,25 +14,27 @@
     }
 
     .container {
-      max-width: 650px;
-      margin: 70px auto;
+      max-width: 760px;
+      margin: 60px auto;
       background: white;
       padding: 45px;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,.08);
     }
 
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 35px;
+    h1, h2 {
+      color: #111;
     }
 
     .subtitle {
       color: #666;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-top: 35px;
+      padding-top: 25px;
+      border-top: 1px solid #eee;
     }
 
     label {
@@ -73,24 +75,17 @@
       background: #222;
       color: white;
       font-size: 16px;
-      cursor: pointer;
     }
 
     .fine-print {
       margin-top: 18px;
       font-size: 13px;
       color: #666;
-      line-height: 1.5;
-    }
-
-    .sms-opt-in {
-      margin-top: 40px;
-      padding-top: 25px;
-      border-top: 1px solid #eee;
+      line-height: 1.6;
     }
 
     footer {
-      margin-top: 35px;
+      margin-top: 40px;
       padding-top: 20px;
       border-top: 1px solid #eee;
       font-size: 14px;
@@ -109,52 +104,74 @@
     <h1>AI Med Spa Demo</h1>
 
     <p class="subtitle">
-      Request information about services, pricing, or scheduling.
+      AI Med Spa Demo is a demonstration customer communication service for
+      answering inquiries, providing general service information, and assisting
+      with appointment scheduling by SMS.
     </p>
 
-    <form>
-
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name">
-
-      <label for="phone">Mobile Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
-
-      <div class="consent">
-        <input type="checkbox" id="sms-consent" name="sms-consent">
-        <label for="sms-consent" style="margin:0;font-weight:normal;">
-          I agree to receive automated SMS messages from AI Med Spa Demo
-          regarding my inquiry, services, pricing, appointment scheduling,
-          and follow-up. Consent is not a condition of purchase.
-        </label>
-      </div>
-
-      <p class="fine-print">
-        Message frequency varies. Message and data rates may apply.
-        Reply STOP to opt out at any time or HELP for assistance.
-      </p>
-
-      <button type="submit">Submit Request</button>
-
-    </form>
-
-    <div class="sms-opt-in">
-      <h2>Text Message Opt-In</h2>
+    <div class="section">
+      <h2>About AI Med Spa Demo</h2>
 
       <p>
-        To contact AI Med Spa Demo by SMS, text START to our business phone number.
-        By texting START, you consent to receive text messages regarding your
-        inquiries, services, pricing, and appointment scheduling.
+        AI Med Spa Demo communicates directly with individuals who contact the
+        business and choose to receive text messages. Messages are used for
+        customer inquiries, service information, appointment assistance, and
+        related customer support.
+      </p>
+
+      <p>
+        AI Med Spa Demo does not sell customer information or operate as a
+        third-party lead marketplace.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Request Information</h2>
+
+      <form>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="phone">Mobile Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+        <div class="consent">
+          <input type="checkbox" id="sms-consent" name="sms-consent">
+          <label for="sms-consent" style="margin:0;font-weight:normal;">
+            I agree to receive automated SMS messages from AI Med Spa Demo
+            regarding my inquiry, service information, appointment scheduling,
+            and follow-up communications. Consent is not a condition of purchase.
+          </label>
+        </div>
+
+        <p class="fine-print">
+          Message frequency varies. Message and data rates may apply.
+          Reply STOP to opt out at any time or HELP for assistance.
+        </p>
+
+        <button type="submit">Submit Request</button>
+
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>SMS Program Information</h2>
+
+      <p>
+        Customers may receive SMS messages from AI Med Spa Demo only after
+        providing their mobile number and affirmatively opting in through the
+        form above.
       </p>
 
       <p class="fine-print">
         Message frequency varies. Message and data rates may apply.
-        Consent is not a condition of purchase. Reply STOP to opt out
-        or HELP for assistance.
+        Reply STOP to opt out or HELP for assistance.
       </p>
     </div>
 
     <footer>
+      <strong>AI Med Spa Demo</strong><br><br>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms & Conditions</a>
     </footer>
