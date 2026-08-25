@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Med Spa Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 70px auto;
+      background: white;
+      padding: 45px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 35px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .consent {
+      display: flex;
+      gap: 10px;
+      margin-top: 25px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .consent input {
+      margin-top: 4px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 14px;
+      border: 0;
+      border-radius: 6px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .fine-print {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #333;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>AI Med Spa Demo</h1>
+
+    <p class="subtitle">
+      Request information about services, pricing, or scheduling.
+    </p>
+
+    <form>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="phone">Mobile Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+      <div class="consent">
+        <input type="checkbox" id="sms-consent" name="sms-consent">
+        <label for="sms-consent" style="margin:0;font-weight:normal;">
+          I agree to receive automated SMS messages from AI Med Spa Demo
+          regarding my inquiry, services, pricing, appointment scheduling,
+          and follow-up. Consent is not a condition of purchase.
+        </label>
+      </div>
+
+      <p class="fine-print">
+        Message frequency varies. Message and data rates may apply.
+        Reply STOP to opt out at any time or HELP for assistance.
+      </p>
+
+      <button type="submit">Submit Request</button>
+
+    </form>
+
+    <footer>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </footer>
+
+  </div>
+</body>
+</html>
